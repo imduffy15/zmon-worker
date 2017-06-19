@@ -57,7 +57,7 @@ class NotifyOpsgenie(BaseNotification):
             'team': alert['alert_def']['team'],
             'responsible_team': alert['alert_def']['responsible_team'],
             'entity': entity['id'],
-            'infrastructure_account': alert['alert_def'].get('infrastructure_account', 'UNKNOWN'),
+            'infrastructure_account': entity.get('infrastructure_account', 'UNKNOWN'),
         }
 
         params = {}
