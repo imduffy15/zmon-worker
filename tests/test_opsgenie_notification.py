@@ -20,7 +20,7 @@ MESSAGE = 'ZMON ALERT'
 HEADERS = {
     'User-Agent': get_user_agent(),
     'Content-type': 'application/json',
-    'Authorization': 'GenieKey 123'.format(API_KEY),
+    'Authorization': 'GenieKey {}'.format(API_KEY),
 }
 
 
